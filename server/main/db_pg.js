@@ -5,7 +5,7 @@ const config = require('../config/config').get(process.env.NODE_ENV);
 
 const pool = new Pool({
   user: 'postgres',
-  host: 'localhost',
+  host: config.DATABASE,
   database: 'drtsdbv2',
   password: 'test',
   post: 5432
