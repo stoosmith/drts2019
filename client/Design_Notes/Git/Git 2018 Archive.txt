@@ -1,0 +1,48 @@
+First install Git from the web - chosing the defaults
+Add some global account details
+# git config --global user.name "stoosmith"
+# git config --global user.email "stoosmith@yahoo.co.uk"
+---------
+Register with github
+---------
+Create Repository either online or by:
+# git init projectname
+Click clone and copy HTTPS url.
+[1] Get a copy of the Repository
+# git clone https://github.com/stoosmith/drts1.git
+OR UPLOAD TO NEWLY CREATED REPO
+# git remote add origin https://github.com/stoosmith/drts-v2.git
+# git push -u origin master
+---------
+[2] Make necessary changes
+[3] Check status
+# git status
+[4] Add/update files
+# git add .       or     git add filename.txt
+[5] once changes are added you need to commit them to the Repository
+# git commit -m "upload test file"
+[6] Push them to the Repository
+# git push
+---------
+get the latest changes
+# git pull
+---------
+check available branches
+# git branch
+---------
+create branch
+# git branch branchname
+---------
+connect to branch
+# git checkout branchname
+---------
+
+****** good practice to avoid conflicts with multiple branches by going back to master
+pulling the latest master
+# git checkout master
+# git pull
+go back to branch
+# git checkout branchname
+merge with the new-master
+# git merge master
+****** this will show all conflicts within the files
