@@ -17,7 +17,7 @@ CREATE TABLE users (
 CREATE TABLE leagues (
   l_id SERIAL PRIMARY KEY,
   league_name VARCHAR(255) NOT NULL UNIQUE,
-  fixture_dow VARCHAR(9) NOT NULL,
+  matchdays VARCHAR(9) NOT NULL,
   logo VARCHAR(255),
   league_active INT DEFAULT 0
 );
